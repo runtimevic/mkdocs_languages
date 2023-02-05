@@ -1,0 +1,97 @@
+# Project information
+site_name: Mkdocs Languages
+docs_dir: '../../docs/pt-BR'
+site_url: https://guedesfelipe.github.io/mkdocs_languages/pt-BR/
+site_author: Felipe Guedes
+site_description: mkdocs_languages description
+
+# Repository
+repo_name: guedesfelipe/mkdocs_languages
+repo_url: https://github.com/guedesfelipe/mkdocs_languages
+edit_uri: ""
+
+# Configuration
+theme: 
+  icon:
+    logo: fontawesome/solid/code
+  name: material
+  language: pt-BR
+  features:
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: deep purple
+      accent: amber
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: deep purple
+      accent: amber
+
+# Plugins
+plugins:
+  - search:
+      lang: pt-BR
+
+# Customization
+extra:
+  homepage: https://guedesfelipe.github.io/mkdocs_languages/
+  alternate:
+    - name: English
+      link: /mkdocs_languages/en/
+      lang: en
+    - name: Portuguese (Brasilian)
+      link: /mkdocs_languages/pt-BR/
+      lang: pt-BR
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Primeira Página: page_one.md
+  - Segunda Página: page_two.md
