@@ -1,4 +1,4 @@
 # Index pt-BR
 
 
-idioma pt-br
+idioma pt-brr
